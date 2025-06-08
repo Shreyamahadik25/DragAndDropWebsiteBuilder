@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #eef2f5;
+    color: #f3eaea;
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #f3e9c8;
+  }
+  .editor h2{
+    margin-bottom: 10px;
+    color: #790a4f;
+  }
+  
+  .builder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .sidebar, .canvas, .editor {
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Sidebar with soft blue background */
+  .sidebar {
+    background-color: #52064b;
+  }
+  
+  /* Sidebar draggable buttons */
+  .sidebar button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 100%;
+    background-color: #f47ed0;
+    color: aqua;
+    border: none;
+    border-radius: 6px;
+    cursor: grab;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar button:hover {
+    background-color: #0277bd;
+  }
+  
+  .canvas {
+    background-color: #fff;
+    min-height: 400px;
+    border: 2px dashed #aaa;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .canvas p,
+  .canvas button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .canvas button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+  }
+  
+  .canvas img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Editor with soft orange background */
+  .editor {
+    background-color: #fff3e0;
+    border-left: 1px solid #ddd;
+  }
+  
+  .editor h2 {
+    margin-bottom: 15px;
+  }
+  
+  #formFields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  
+  .editor label {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .editor input[type="text"],
+  .editor input[type="number"],
+  .editor input[type="color"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .editor input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Delete Button */
+  .editor button[type="button"] {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: center;
+  }
+  
+  .editor button[type="button"]:hover {
+    background-color: #c2002f;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .builder {
+      flex-direction: column;
+    }
+  
+    .sidebar, .canvas, .editor {
+      min-width: 100%;
+    }
+  
+    .canvas {
+      min-height: 300px;
+    }
+  }
+ 
+
+
+
+
+
+  
